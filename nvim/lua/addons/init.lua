@@ -1,0 +1,6 @@
+require("addons.packer")
+require("addons.nvimtree")
+require("addons.nvimdevicons")
+require("addons.toggleterm")
+require("addons.undotree")
+require("addons.onedark")

@@ -1,25 +1,34 @@
 
 * {
-    bg0: rgba(42, 42, 55, 1);
-    bg1: #1e1f28;
-    grey0: #dcd7ba;
-    fg0: #dcd7ba;
+    /* Backgrounds */
+    bg0: #2d353b;        /* primary background */
+    bg1: #475258;        /* normal black / secondary bg */
 
-    blue: #7e9cd8;
-    red: #ea6962;
-    orange: #e78a4e;
-    green: #a9b665;
-    bgStatusline3: #dcd7ba;
+    /* Foreground */
+    fg0: #d3c6aa;        /* primary foreground */
+    grey0: #d3c6aa;
+
+    /* Accent colors */
+    red: #e67e80;
+    green: #a7c080;
+    yellow: #dbbc7f;
+    blue: #7fbbb3;
+    magenta: #d699b6;
+    cyan: #83c092;
+    orange: #dbbc7f;     /* mapped from yellow */
+
+    /* Statusline / emphasis */
+    bgStatusline3: #d3c6aa;
 
     background-color: @bg0;
 }
+
 
 window {
     height: 500;
     width: 500;
 
     border: 2;
-    border-radius: 10;
     border-color: @bgStatusline3;
 }
 
@@ -41,7 +50,6 @@ message {
 
 listview {
     padding: 8;
-    border-radius: 0 0 10 10;
     border: 2 2 2 2;
     border-color: @bg0;
     background-color: @bg0;
@@ -68,7 +76,6 @@ prompt {
 element {
     padding: 5;
     vertical-align: 0.5;
-    border-radius: 10;
     background-color: @bg1;
 }
 

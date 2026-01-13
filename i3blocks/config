@@ -1,0 +1,34 @@
+
+[volume]
+command=pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}'
+label=VOL 
+interval=once
+separator=true
+separator_block_width=30
+color=#d699b6
+
+[cpu_usage]
+command=./cpu_usage
+interval=3
+LABEL=CPU 
+NORMAL_COLOR=#7fbbb3
+DECIMALS=0
+COLOR_WARN=#e67e80
+COLOR_CRIT=#e67e80
+separator=true
+separator_block_width=30
+
+[battery2]
+command=./battery2
+markup=pango
+interval=1
+separator=true
+separator_block_width=30
+color=#83c092
+
+[time]
+command=date '+%a %d %b %H:%M'
+interval=1
+separator=true
+separator_block_width=15
+

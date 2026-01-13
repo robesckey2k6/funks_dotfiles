@@ -1,0 +1,5 @@
+require("bindings.vim")
+require("bindings.telescope")
+require("bindings.nvimtree")
+require("bindings.toggleterm")
+require("bindings.undotree")
